@@ -1,16 +1,13 @@
-import Settings.WebDriverSettings;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.util.List;
 
 public class ConsultantTest extends WebDriverSettings {
     @Test
     public void firstTest(){
-
+        chromeDriver.get("http://www.consultant.ru/cons/");
+        WebElement searchPlus = chromeDriver.findElement(By.xpath("//a[@menu='searchPlus']"));
+        searchPlus.click();
     }
 
 //
