@@ -18,8 +18,8 @@ public class WebDriverSettings {
         chromeDriver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
         chromeDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         }
-    @AfterEach
-    public void closeBrowser(){
-        chromeDriver.quit();
-    }
+//    @AfterEach
+//    public void closeBrowser(){
+//        chromeDriver.quit();
+//    }
 }
